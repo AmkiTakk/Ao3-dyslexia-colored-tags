@@ -1,3 +1,9 @@
+# Ao3-dyslexia, now with Colored Tags™
+This is a fork of electricalice's theme that adds colored tags to better tell each type (warning, relationship, character) apart, and makes small tweaks to the code based on my own preferences.
+
+Original description below :
+
+
 # Ao3-dyslexia
 A dyslexia friendly skin for ArchiveOfOurOwn.org Presentation, previews, and installation guide [here directly on ArchiveofOurOwn](https://archiveofourown.org/works/30918077/chapters/76349072).
 
