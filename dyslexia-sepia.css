@@ -2032,3 +2032,14 @@ button,
 select {
   font-size: 16px;
 }
+
+/*
+--------------------- ITALICS BACK TO ITALICS ---------------------
+(Reverses the changes to italics, to better be able to tell them apart from bold text)
+*/
+i,
+em,
+cite {
+  font-style: italic;
+  font-weight: unset;
+}
