@@ -34,10 +34,11 @@ body,
 .home .header dl.stats,
 .home .header .type,
 .blurb dl.tags dd,
-dl.meta dd, h4.heading {
+dl.meta dd,
+h4.heading {
   /*
   This allows words to break.
-  Used in cases of long user names and long words 
+  Used in cases of long user names and long words
   that otherwise would break the entire layout
   */
   overflow-wrap: break-word;
@@ -69,7 +70,8 @@ h5.fandoms.heading,
 }
 
 .user h2.heading,
-.admin h2.heading, .collection h2.heading {
+.admin h2.heading,
+.collection h2.heading {
   /*
   Centers Usernames and titles in admin pages and collections
   */
@@ -89,7 +91,7 @@ h5.fandoms.heading,
 
   Change this to the color you are using for your links
   */
-  color: #4675C0;
+  color: #4675c0;
 }
 
 #header .primary {
@@ -158,7 +160,7 @@ h5.fandoms.heading,
 }
 
 #header .primary .menu a {
-  /* 
+  /*
   The dropdown menu items will have enough space around them
   */
   padding: 0.429em 0.75em;
@@ -180,7 +182,7 @@ h5.fandoms.heading,
 }
 
 #dashboard ul {
-  /* 
+  /*
   puts everything in the menu in a nice order
   */
   display: inline-block;
@@ -191,11 +193,13 @@ h5.fandoms.heading,
  Work Page
 ===========
 */
-#workskin, .collection blockquote.userstuff {
+#workskin,
+.collection blockquote.userstuff {
   /*
   This resets the main page width to a decent size for mobile
   */
   width: 100% !important;
+  padding: 0px; /* fixes overscroll on mobile */
 }
 
 p.kudos {
@@ -227,7 +231,8 @@ div.preface,
   padding: 0;
 }
 
-.userstuff li, .userstuff ol ul li {
+.userstuff li,
+.userstuff ol ul li {
   /*
   reduces the indent in the lists
   */
@@ -245,7 +250,8 @@ dl.meta dd {
   margin-left: auto;
 }
 
-.chapter .secondary, .download .secondary {
+.chapter .secondary,
+.download .secondary {
   /*
   This moves the download option and the chapter option
   in a better position
@@ -255,7 +261,8 @@ dl.meta dd {
   margin: 10px;
 }
 
-.chapter .expandable.secondary, .chapter .expandable.secondary select {
+.chapter .expandable.secondary,
+.chapter .expandable.secondary select {
   width: 90%;
 }
 
@@ -271,7 +278,9 @@ dl.meta dd {
   position: initial;
 }
 
-.blurb ul.tags.commas, .blurb h5.fandoms.heading, dd a.tag {
+.blurb ul.tags.commas,
+.blurb h5.fandoms.heading,
+dd a.tag {
   /* slightly smaller tags */
   font-size: 90%;
 }
@@ -291,7 +300,8 @@ dl.meta dd {
   display: flex;
 }
 
-.blurb ul.required-tags li + li + li, .blurb ul.required-tags li + li + li + li {
+.blurb ul.required-tags li + li + li,
+.blurb ul.required-tags li + li + li + li {
   position: initial;
   left: initial;
 }
@@ -306,8 +316,9 @@ dl.meta dd {
 ===========
 */
 .user .primary p.icon,
-.admin .primary .icon, .collection .icon {
-  /* 
+.admin .primary .icon,
+.collection .icon {
+  /*
   centers the icons on profile pages, collections and news posts
   */
   position: initial;
@@ -360,14 +371,14 @@ ol.pagination {
 ===========
 */
 #footer .module {
-  /* 
+  /*
   makes footer module smaller and centers them
   */
   max-width: 40%;
   margin: auto;
 }
 
-/* 
+/*
 ===========
   FIXES
 ===========
@@ -392,7 +403,8 @@ Resets stuff from Ao3 default skin
   background-color: transparent;
 }
 
-li.showme a.actions, dl.stats dd {
+li.showme a.actions,
+dl.stats dd {
   /* button show most recent bookmarks on mobile is too long*/
   white-space: normal;
   height: initial;
@@ -405,8 +417,8 @@ Fixing actual errors from default Ao3
   top: 522px !important;
 }
 
-.assigned.module th[scope=col],
-thead th[scope=col] {
+.assigned.module th[scope="col"],
+thead th[scope="col"] {
   max-width: 18px;
   overflow: hidden;
 }
