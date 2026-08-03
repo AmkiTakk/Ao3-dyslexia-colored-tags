@@ -13,8 +13,8 @@ h6,
 .heading {
   /*
     -----------------TITLE FONT-----------------
-  This is the font for the titles, not for the body of text. 
-  If you want to change it remember to provide fallback fonts 
+  This is the font for the titles, not for the body of text.
+  If you want to change it remember to provide fallback fonts
   (something like 'serif' or 'sans-serif', separated by a comma)
   */
   font-family: "Trebuchet MS", Calibri, sans-serif;
@@ -43,7 +43,7 @@ select {
   /*
   -----------------MAIN FONT-----------------
   This is the font for the entire body of text. If you need to change it please do it here
-  Please also remember to provide fallback fonts 
+  Please also remember to provide fallback fonts
   (something like 'serif' or 'sans-serif', separated by a comma)
   */
   font-family: "Trebuchet MS", Calibri, sans-serif;
@@ -175,7 +175,7 @@ select {
 .filters dd,
 .filters input[type="submit"],
 .filters .expander {
-  /* 
+  /*
   a smaller text for the filters
   just remove the font-size line if you want it bigger
   */
@@ -274,8 +274,8 @@ td,
 .filters dd,
 .filters input[type="submit"],
 .filters .expander {
-  /* 
-  for some weird reason this is needed 
+  /*
+  for some weird reason this is needed
   or fonts just won't behave
   */
   font-size: 100%;
@@ -439,7 +439,7 @@ div#comments_placeholder,
   /*
   -----------------PARAGRAPH WIDTH-----------------
   This sets the width of the reading paragraphs.
-  It sets a percentage according to the width of the screen 
+  It sets a percentage according to the width of the screen
   (reduce or increase the percentage of width: 70%; to change this. remember the semicolon.)
   but it doesn't allow it to go over a certain amount of width, so that even HUGE screens
   will have a maximum width for the text.
@@ -453,7 +453,7 @@ div#comments_placeholder,
 }
 
 .comment .userstuff {
-  /* 
+  /*
   resets the width of the paragraph comments after being reduced as a part of .userstuff
   */
   width: 95%;
@@ -479,20 +479,20 @@ div#comments_placeholder,
   margin: 2em auto;
 }
 
-/* 
-Basic fic formatting 
-      (bold, 
-    italics 
-  and underline) 
+/*
+Basic fic formatting
+      (bold,
+    italics
+  and underline)
 */
 u,
 acronym[title],
 abbr[title] {
-  /* 
+  /*
   --------UNDERLINE---------
-  To remove the colored underline from the skin just remove 
+  To remove the colored underline from the skin just remove
   the following 2 lines (border-bottom etc etc and padding-bottom etc etc)
-  This will leave a nice, readable bold text 
+  This will leave a nice, readable bold text
   */
   /* start deleting here -> */
   border-bottom: 2px solid #4675c0;
@@ -509,10 +509,10 @@ strong {
 
 /*
 --------ITALICS---------
-The following code remove all the italics and changes 
-them into bold instead for easier dyslexia reading. 
+The following code remove all the italics and changes
+them into bold instead for easier dyslexia reading.
 This will override what the fic author's decided to use.
-If you prefer you can delete it and all will return to normal 
+If you prefer you can delete it and all will return to normal
 */
 /* start deleting here -> */
 i,
@@ -550,6 +550,8 @@ ul.notes,
 .actions input:hover,
 .actions a:focus,
 .actions input:focus,
+.actions button:hover,
+.actions button:focus,
 label.action:hover,
 .action:hover,
 .action:focus,
@@ -591,7 +593,8 @@ textarea,
 .action:link,
 button,
 .current,
-.actions label {
+.actions label,
+.actions button {
   /*
   This resets the shadows in several places
   */
@@ -617,7 +620,8 @@ textarea,
 .action:link,
 button,
 .current,
-.actions label {
+.actions label,
+.actions button {
   /*
   This resets the background image from default skin in several places
   */
@@ -633,7 +637,8 @@ textarea,
 .action:link,
 button,
 .current,
-.actions label {
+.actions label,
+.actions button {
   /*
   Further 3d elements to reset in webkit browsers
   */
@@ -652,6 +657,7 @@ input[type="submit"],
 button,
 .current,
 .actions label,
+.actions button,
 .notice,
 .comment_notice,
 ul.notes,
@@ -663,6 +669,8 @@ ul.notes,
 .actions input:hover,
 .actions a:focus,
 .actions input:focus,
+.actions button:hover,
+.actions button:focus,
 label.action:hover,
 .action:hover,
 .action:focus,
@@ -679,7 +687,8 @@ label.action:hover,
 .action:link,
 button,
 .current,
-.actions label {
+.actions label,
+.actions button {
   border: none;
 }
 
@@ -731,7 +740,8 @@ form.verbose legend,
 input[type="submit"],
 button,
 .current,
-.actions label {
+.actions label,
+.actions button {
   border-bottom: none;
 }
 
@@ -740,8 +750,8 @@ button,
 .splash .news li,
 form dt,
 .picture .header {
-  /* 
-  some stuff needs some aggressive non-bordering 
+  /*
+  some stuff needs some aggressive non-bordering
   */
   border: none;
   border-bottom: none;
@@ -754,7 +764,7 @@ form dt,
 #small_login,
 #header .dropdown:hover .current + .menu,
 .event .userstuff {
-  /* 
+  /*
   removes some more effects of default skin
   */
   filter: none;
@@ -810,8 +820,8 @@ li.relationships a,
 #bookmark_form_placement form,
 #collection-form form,
 .nomination dt {
-  /* 
-  it removes the color background 
+  /*
+  it removes the color background
   where it's set in Ao3's default skin
   */
   background: transparent;
@@ -845,8 +855,8 @@ li.blurb,
 li.comment,
 #bookmark_form_placement form,
 #collection-form form {
-  /* 
-  sets the border shapes 
+  /*
+  sets the border shapes
   */
   border: 2px solid;
   border-radius: 5px;
@@ -855,21 +865,21 @@ li.comment,
 th,
 thead,
 tbody tr {
-  /* 
-  sets the border shapes 
+  /*
+  sets the border shapes
   */
   border: 2px solid;
 }
 
 li.post.group {
-  /* 
-  posts social distancing 
+  /*
+  posts social distancing
   */
   padding: 10px;
 }
 
 .splash .news li:last-of-type {
-  /* 
+  /*
   last news post in the home page has inexplicabbly a border-bottom
   this removes it
   */
@@ -882,7 +892,7 @@ th,
 td,
 thead,
 tfoot {
-  /* 
+  /*
   this is for tables
   */
   vertical-align: middle;
@@ -921,8 +931,8 @@ a:visited:hover,
 a,
 a:link,
 a:visited:hover {
-  /* 
-  further removes borders to those classes where there's a top and bottom border 
+  /*
+  further removes borders to those classes where there's a top and bottom border
   set in ao3's default skin
   */
   border-top: none;
@@ -930,7 +940,7 @@ a:visited:hover {
 }
 
 span.symbol {
-  /* 
+  /*
   what the hell does this change I can't remember
   */
   color: initial;
@@ -940,7 +950,7 @@ span.symbol {
 
 .blurb .header img,
 #workskin h2.heading img {
-  /* 
+  /*
   Aligns vertically the little lock next to the title in the blurb
   it also gives a bit of a space enough to have a background if needed in dark mode, later
   */
@@ -949,9 +959,9 @@ span.symbol {
   border-radius: 3px;
 }
 
-/* 
-I make the icons smaller, 
-and as such a few things need to be 
+/*
+I make the icons smaller,
+and as such a few things need to be
 properly positioned
 */
 .icon {
@@ -989,8 +999,8 @@ properly positioned
 
 /*end of stuff regarding the icon resizing*/
 .comment .posted {
-  /* 
-  positions the date of a comment 
+  /*
+  positions the date of a comment
   */
   display: block;
   float: none;
@@ -1090,22 +1100,22 @@ div#comments_placeholder,
 }
 
 #header .heading {
-  /* 
+  /*
   gives a decent space on the left to Ao3's logo in the header
   */
   margin-left: 2em;
 }
 
 #header h1 {
-  /* 
-  Ao3 Logo is boldy 
+  /*
+  Ao3 Logo is boldy
   */
   font-weight: 700;
 }
 
 #login,
 #greeting {
-  /* 
+  /*
   gives a decent space on top to the user's menu in the header
   */
   margin-top: 10px;
@@ -1115,7 +1125,7 @@ div#comments_placeholder,
 #small_login,
 #header .dropdown:hover .current + .menu {
   /*
-  Makes the dropdown menu bigger, 
+  Makes the dropdown menu bigger,
   since the font used in this theme is huge
   */
   width: 25em;
@@ -1133,7 +1143,7 @@ div#comments_placeholder,
 #main.system h3.heading,
 #header h2.collections,
 #header h2 {
-  /* 
+  /*
   centers a few kind of titles (collections, news posts, FAQs...)
   */
   text-align: center;
@@ -1157,7 +1167,7 @@ div#comments_placeholder,
 
 #header h2.collections,
 #header h2 {
-  /* 
+  /*
   resetting ao3 default skin's border on top of collection's header
   */
   border-top: none;
@@ -1180,7 +1190,7 @@ div#comments_placeholder,
 /*
 -----------------TAGS-----------------
 This is what makes the tag having a border!
-If you want to remove the border please delete all these lines 
+If you want to remove the border please delete all these lines
 */
 /* start deleting here -> */
 a.tag,
@@ -1226,7 +1236,7 @@ h5.fandoms.heading {
 .blurb ul li,
 .blurb dd ul li,
 .meta dd ul li {
-  /* 
+  /*
   paginates better the tags, so that they tend to not break lines mid-tag.
   it's a readibility thing related to the border for the tags
   */
@@ -1254,8 +1264,8 @@ h5.fandoms.heading {
 
 .filters .expander,
 .filters .expanded .expander {
-  /* 
-  sets the spacing and font of the filter expander text 
+  /*
+  sets the spacing and font of the filter expander text
   */
   padding: 0px;
   font-size: 1.05em;
@@ -1263,15 +1273,15 @@ h5.fandoms.heading {
 }
 
 .filters .expander::before {
-  /* 
-  This is the arrow for the filters 
+  /*
+  This is the arrow for the filters
   */
   content: "➙";
 }
 
 .filters .expanded .expander::before {
-  /* 
-  This is the arrow for the filters when expanded 
+  /*
+  This is the arrow for the filters when expanded
   */
   content: "➘";
 }
@@ -1358,7 +1368,7 @@ input[type="radio"] {
 }
 
 .filters .exclude [type="checkbox"]:checked + .indicator:before {
-  /* 
+  /*
   the exclude filters have a different color when checked
   */
   background-color: #a62637;
@@ -1380,8 +1390,8 @@ input[type="radio"]:checked,
 label.action input[type="checkbox"]:checked,
 input[type="checkbox"]:hover,
 .actions input[type="checkbox"]:hover {
-  /* 
-  removes browser-specific appearance of checkboxes and radio 
+  /*
+  removes browser-specific appearance of checkboxes and radio
   */
   display: inline-block;
   appearance: none;
@@ -1433,7 +1443,7 @@ select:focus,
 textarea:focus,
 input,
 textarea {
-  /* 
+  /*
   sets the color of most forms
   */
   border-top-color: #e4e4eb;
@@ -1452,7 +1462,7 @@ input[type="checkbox"] {
 .filters [type="radio"] + .indicator:before,
 .filters [type="checkbox"] + .indicator:before,
 .filters .exclude [type="checkbox"] + .indicator:before {
-  /* 
+  /*
   filter related checkboxes and radio
   */
   background-color: #e4e4eb;
@@ -1474,8 +1484,8 @@ input[type="checkbox"] {
 
 .announcement input[type="submit"],
 .announcement .action {
-  /* 
-  no idea what this is but it does something I guess 
+  /*
+  no idea what this is but it does something I guess
   it was probabbly related to some announcement bar it appeared at some point
   */
   border: 1px solid #4675c0;
@@ -1549,6 +1559,7 @@ input[type="submit"],
 button,
 .current,
 .actions label,
+.actions button,
 .listbox > .heading,
 .listbox .heading a:visited,
 form dd.required,
@@ -1625,6 +1636,7 @@ input[type="submit"],
 button,
 .current,
 .actions label,
+.actions button,
 .dropdown,
 .splash .favorite li:nth-of-type(odd) a,
 .statistics .index li:nth-of-type(even),
@@ -1695,6 +1707,8 @@ a.tag:hover,
 .actions input:hover,
 .actions a:focus,
 .actions input:focus,
+.actions button:hover,
+.actions button:focus,
 label.action:hover,
 .action:hover,
 .action:focus,
@@ -1738,6 +1752,8 @@ a.tag:hover,
 .actions input:hover,
 .actions a:focus,
 .actions input:focus,
+.actions button:hover,
+.actions button:focus,
 label.action:hover,
 .action:hover,
 .action:focus,
@@ -1765,7 +1781,7 @@ li.dropdown,
 .filters .expander,
 .filters .expanded .expander {
   /*
-  Related to the previous classes, this colors the text in a way that it can 
+  Related to the previous classes, this colors the text in a way that it can
   be read on the accent color background
   Use a hex color picker to change this!
   */
@@ -1791,8 +1807,8 @@ ul.notes,
 #header h2.collections,
 #header h2,
 .alert .userstuff {
-  /* 
-  This is the background color of the notices, alert, comment errors and stuff like that 
+  /*
+  This is the background color of the notices, alert, comment errors and stuff like that
   */
   background-color: #8fc8eb;
   background: #8fc8eb;
@@ -1803,7 +1819,7 @@ ul.notes,
 .alert.flash,
 .nominations .rejected,
 .alert .userstuff {
-  /* 
+  /*
   This sets the warning text color for alerts, error, and stuff like that
   */
   color: #a62637;
@@ -1847,7 +1863,7 @@ li.comment,
 .guideline .example,
 #bookmark_form_placement form,
 #collection-form form {
-  /* 
+  /*
   this sets the borders color
   Use a hex color picker to change this!
   */
